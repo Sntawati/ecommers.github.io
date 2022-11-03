@@ -37,7 +37,7 @@
     <div>
         <label for="">Nama Pengiriman</label>
         <select name="nmdist" id="">
-            <option></option>
+            <option>Pilih</option>
             <option value=""></option>
             
         </select>
