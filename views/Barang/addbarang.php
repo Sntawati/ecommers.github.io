@@ -10,7 +10,7 @@
     }
 ?>
 <caption><h1>Data Barang</h1></caption>
-<form action="" method=""post>
+<form action="<?= $base_url?>barang/save" method=""post>
     <div>
         <label for="">Id Barang</label>
         <input type="text" name="idbarang" id="" value="<?= $kodebarang ?>" readonly>
@@ -38,7 +38,8 @@
         <label for="">Nama Pengiriman</label>
         <select name="nmdist" id="">
             <option>Pilih</option>
-            <option value=""></option>
+        <php foreach ($data['distri'] as $dis)
+        <option value="<?=dist['iddist']?>">
             
         </select>
     </div>

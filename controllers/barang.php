@@ -17,5 +17,5 @@ if($aksi=='save'){
     $status=1;
     $simpan=$db->qry($connect,"INSERT INTO tbarang VALUES ('$idbarang','$nmbarang','$idjenis','$stok','$harga','$iddist','$status')");
     if($simpan);
-    
+
 }

@@ -7,7 +7,7 @@ class Helpers
 {
 	
 	function base_url() {
-		return $base_url = 'http://localhost/ecommers/';
+		return $base_url = 'http://localhost:/ecommers/';
 	}
 
 	function template($view, $data = '') {
@@ -16,6 +16,8 @@ class Helpers
 		$nama = 'test';
 
 		include 'views/includes/header.php';
+		include 'views/includes/navbar.php';
+		include 'views/includes/sidebar.php';
 		include 'views/'.$view;
 		include 'views/includes/footer.php';
 	}
